@@ -1,0 +1,1 @@
+import * as ezgame from "./ezgame.js"
