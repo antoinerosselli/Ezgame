@@ -20,8 +20,11 @@ function update(){
         moki.moveText(200,200,1);
     }
     if (game.key == "s"){
-        rect.moveRect(50, 300);
-        text.moveText(rect.x,rect.y,0);
+        rect.moveRect(rect.x, rect.y + 10);
+    }
+
+    if (game.key == "a"){
+        rect.moveRect(rect.x, rect.y - 10);
     }
 }
 
