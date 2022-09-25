@@ -29,5 +29,5 @@ export class _rectangle  {
     {
         this.color = color;
     }
-    
+
 }
