@@ -28,7 +28,7 @@ export class _text{
             this.move = setInterval(() => this.textGoTo(x,y), per_frame);
         }
         else{
-            this.context.clearRect(this.x - 5 , this.y - this.size, 200, this.size + 10);
+            this.context.clearRect(this.x - 5 , this.y - this.size, 10000, this.size + 10);
             this.x = x;
             this.y = y;
             console.log(this.size);
@@ -48,11 +48,10 @@ export class _text{
         if (this.y > y){
             this.y -= 1;
         }
-        this.context.clearRect(this.x - 5 , this.y - this.size, 200, this.size + 10);
+        this.context.clearRect(this.x - 5 , this.y - this.size, 10000, this.size + 10);
         if (this.x == x && this.y == y){
             clearInterval(this.move);
         }
-
     }
 
     changeFont(size,font){
@@ -65,6 +64,7 @@ export class _text{
     }
 
     changeText(text_contain){
+        this.context.clearRect(this.x - 5 , this.y - this.size, 10000, this.size + 10);
         this.contain = text_contain;
     }
 
